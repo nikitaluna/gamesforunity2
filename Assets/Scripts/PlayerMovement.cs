@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour {
 	void FixedUpdate()
 	{
 		 float axis; 
-		axis = Input.GetAxis ("Horizontal"); 
+		axis = Input.GetAxisRaw ("Horizontal"); 
 		 Vector2 force = new Vector2(axis * _moveForce, 0);
 		_rigidbody.AddForce(force);
 
