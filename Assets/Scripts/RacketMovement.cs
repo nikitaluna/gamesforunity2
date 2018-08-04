@@ -17,7 +17,9 @@ public class RacketMovement : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.A)) {
 			racketrigidbody.AddForceAtPosition (racketend.forward * racketforce, racketend.position);
 		}
-
+		if (Input.GetKeyDown (KeyCode.D)) {
+			racketrigidbody.AddForceAtPosition (racketend.forward * -1 * racketforce, racketend.position);
+		}
 			
 	}
 }
